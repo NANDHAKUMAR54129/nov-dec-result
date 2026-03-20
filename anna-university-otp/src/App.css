@@ -1,0 +1,282 @@
+/* App.css - Professional & Clean White Theme */
+
+/* --- ANIMATIONS --- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.logo-container {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.au-logo {
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.au-logo:hover {
+  transform: scale(1.05);
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 0 30px;
+}
+
+.header-titles h1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #0f172a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* --- MAIN CONTENT & BANNER --- */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-banner {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  animation: slideUp 0.6s ease-out;
+}
+
+.welcome-banner h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e40af;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- PANELS CONTAINER --- */
+.panels-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- LOGIN PANELS --- */
+.login-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 90vw;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  padding-bottom: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dob-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.date-format {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.play-btn {
+  color: #1e40af;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+/* Captcha area styling */
+.captcha-wrapper {
+  margin: 5px 0;
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh-captcha-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #1e40af;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.refresh-captcha-btn:hover {
+  transform: rotate(90deg);
+}
+
+.form-actions {
+  margin-top: 10px;
+}
+
+.login-btn {
+  background: #1e40af;
+  color: #ffffff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+}
+
+/* --- RESPONSIVE QUERIES --- */
+
+/* Mobile */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 8px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+  }
+  .au-logo {
+    height: 30px;
+  }
+  .header-titles {
+    padding: 0 5px;
+  }
+  .header-titles h1 {
+    font-size: 9px;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+  .welcome-banner {
+    padding: 10px;
+    margin-bottom: 12px;
+    max-width: 95%;
+  }
+  .welcome-banner h2 {
+    font-size: 11px;
+  }
+  .login-panel {
+    padding: 20px;
+    width: 92%;
+  }
+  .panel-title {
+    font-size: 16px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .header-titles h1 {
+    font-size: 18px;
+  }
+}
