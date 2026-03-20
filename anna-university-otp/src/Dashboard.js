@@ -116,7 +116,7 @@ function Dashboard({ user, onLogout }) {
               
               <div className="detail-row">
                 <span className="detail-label">Branch</span>
-                <span className="detail-value">B.Tech. INFORMATION TECHNOLOGY</span>
+                <span className="detail-value">B.Tech.Information Technology</span>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ function Dashboard({ user, onLogout }) {
               </div>
               <div className="info-item">
                 <span className="info-label">Programme:</span>
-                <span className="info-value">B.Tech. IT</span>
+                <span className="info-value">B.Tech.Information Technology</span>
               </div>
               <div className="info-item gpa-info-item">
                 <div className="gpa-inline-content">
