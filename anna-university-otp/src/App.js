@@ -175,7 +175,8 @@ function App() {
           <img src={aamecLogo} alt="AAMEC Logo" className="au-logo" />
         </div>
         <div className="header-titles">
-          <h1>ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE</h1>
+          <h1>IT 3rd Year Result</h1>
+          <h2 className="college-subtitle">ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE</h2>
         </div>
         <div className="logo-container right-logo">
           <img src={rightLogo} alt="IT Logo" className="au-logo" />

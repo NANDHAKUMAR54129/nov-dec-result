@@ -60,8 +60,8 @@ function Dashboard({ user, onLogout }) {
           <img src={aamecLogo} alt="AAMEC Logo" className="dashboard-logo" />
         </div>
         <div className="dashboard-title-container">
-          <h1 className="college-title">ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE</h1>
-          <h2 className="dept-title">DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
+          <h1 className="college-title">IT 3rd Year Result</h1>
+          <h2 className="dept-title">ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE</h2>
         </div>
         <div className="header-logo-container">
           <img src={rightLogo} alt="IT Logo" className="dashboard-logo" />
