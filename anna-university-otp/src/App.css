@@ -70,15 +70,6 @@
   text-transform: uppercase;
 }
 
-.college-subtitle {
-  font-size: 11px;
-  font-weight: 600;
-  color: #64748b;
-  margin: 4px 0 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 /* --- MAIN CONTENT & BANNER --- */
 .main-content {
   flex: 1;
