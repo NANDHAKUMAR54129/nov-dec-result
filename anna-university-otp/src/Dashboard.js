@@ -148,7 +148,6 @@ function Dashboard({ user, onLogout }) {
                 <span className="info-value">{user.name || "N/A"}</span>
               </div>
               <div className="info-item gpa-info-item">
-                <span className="info-label">GPA Calculation:</span>
                 <div className="gpa-inline-content">
                   <button 
                     className="gpa-inline-btn"
