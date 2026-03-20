@@ -147,9 +147,21 @@ function Dashboard({ user, onLogout }) {
                 <span className="info-label">Student Name:</span>
                 <span className="info-value">{user.name || "N/A"}</span>
               </div>
-              <div className="info-item">
-                <span className="info-label">Programme:</span>
-                <span className="info-value">B.Tech. INFORMATION TECHNOLOGY</span>
+              <div className="info-item gpa-info-item">
+                <span className="info-label">GPA Calculation:</span>
+                <div className="gpa-inline-content">
+                  <button 
+                    className="gpa-inline-btn"
+                    onClick={() => setShowGpa(!showGpa)}
+                  >
+                    {showGpa ? 'Hide GPA' : 'View GPA'}
+                  </button>
+                  {showGpa && gpaResult && (
+                    <span className="gpa-inline-result">
+                      GPA: {gpaResult.gpa}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -193,24 +205,6 @@ function Dashboard({ user, onLogout }) {
                   })}
                 </tbody>
               </table>
-            </div>
-
-            {/* GPA Calculation Section */}
-            <div className="gpa-summary-container">
-              <button
-                className="gpa-toggle-btn"
-                onClick={() => setShowGpa(prev => !prev)}
-              >
-                {showGpa ? 'Hide GPA' : 'View GPA'}
-              </button>
-              {showGpa && gpaResult && (
-                <div className="gpa-card">
-                  <div className="gpa-final">
-                    <span className="final-label">GPA:</span>
-                    <span className="final-value">{gpaResult.gpa}</span>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         )}

@@ -246,6 +246,42 @@
   font-weight: 600;
 }
 
+.gpa-info-item {
+  margin-left: auto;
+  min-width: 150px;
+  align-items: flex-end !important;
+}
+
+.gpa-inline-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gpa-inline-btn {
+  background: #1e40af;
+  color: #ffffff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.gpa-inline-btn:hover {
+  background: #1d4ed8;
+}
+
+.gpa-inline-result {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1e40af;
+  animation: fadeIn 0.3s ease-out;
+}
+
 .results-table-container {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
