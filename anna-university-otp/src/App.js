@@ -195,7 +195,6 @@ function App() {
 
           {/* Student Login Panel */}
           <div className="login-panel">
-            <h3 className="panel-title">Student Portal Login</h3>
             <form className="login-form student-form" onSubmit={handleLogin}>
               <div className="form-group">
                 <label>Register Number</label>
