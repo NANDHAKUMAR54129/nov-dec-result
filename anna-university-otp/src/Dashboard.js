@@ -147,6 +147,10 @@ function Dashboard({ user, onLogout }) {
                 <span className="info-label">Student Name:</span>
                 <span className="info-value">{user.name || "N/A"}</span>
               </div>
+              <div className="info-item">
+                <span className="info-label">Programme:</span>
+                <span className="info-value">B.Tech. IT</span>
+              </div>
               <div className="info-item gpa-info-item">
                 <div className="gpa-inline-content">
                   <button 
